@@ -1,0 +1,58 @@
+// font Montserrat
+@font-face {
+    src: url('../../fonts/Montserrat/Montserrat-Regular.ttf');
+    font-family: 'Montserrat Regular';
+}
+
+@font-face {
+    src: url('../../fonts/Montserrat/Montserrat-Italic.ttf');
+    font-family: 'Montserrat Italic';
+}
+
+@font-face {
+    src: url('../../fonts/Montserrat/Montserrat-Bold.ttf');
+    font-family: 'Montserrat Bold';
+}
+
+@font-face {
+    src: url('../../fonts/Montserrat/Montserrat-BoldItalic.ttf');
+    font-family: 'Montserrat BoldItalic';
+}
+
+// Playfair_Display_SC
+
+@font-face {
+    src: url('../../fonts/Playfair_Display_SC/PlayfairDisplaySC-Italic.ttf');
+    font-family: 'PlayfairDisplaySC Italic';
+}
+
+@font-face {
+    src: url('../../fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf');
+    font-family: 'PlayfairDisplaySC Regular';
+}
+
+.font-mont__regular {
+    font-family: 'Montserrat Regular' !important;
+}
+
+.font-mont__italic {
+    font-family: 'Montserrat Italic' !important;
+}
+
+.font-mont__bold {
+    font-family: 'Montserrat Bold' !important;
+}
+
+.font-mont__bolditalic {
+    font-family: 'Montserrat BoldItalic' !important;
+}
+
+//Playfair__Display_SC
+
+.font-sc__bolditalic {
+    font-family: 'PlayfairDisplaySC Italic' !important;
+}
+
+.font-sc__boldregular {
+    font-family: 'PlayfairDisplaySC Regular' !important;
+}
