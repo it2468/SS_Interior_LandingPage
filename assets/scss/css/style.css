@@ -444,7 +444,7 @@ iframe {
     background-image: url("../images/bg-small.png"); }
 
 .footer__wrapper {
-  width: 43%; }
+  width: 60%; }
 .footer__contact, .footer__title {
   margin: 100px 0; }
 
@@ -452,7 +452,8 @@ iframe {
   padding: 5px 0; }
 
 .industry {
-  padding: 100px 0 160px 0; }
+  padding-top: 20px;
+  padding-bottom: 80px; }
   @media screen and (max-width: 1024px) {
     .industry {
       padding: 50px 0 80px 0; } }
@@ -487,12 +488,25 @@ iframe {
       .industry__slide .swiper-container .swiper-pagination span:nth-child(1) {
         margin-bottom: 100px; }
 
+@media (max-width: 1440px) {
+  .font-size-64, .industry__title, .industry__slide .swiper-container .swiper-pagination span:nth-child(1), .industry__title, .industry__slide .swiper-container .swiper-pagination span:nth-child(1) {
+    font-size: 51px; }
+
+  .industry__slide .swiper-container .swiper-pagination span {
+    font-size: 31px; } }
 @media (max-width: 1280px) {
   .industry {
     overflow: hidden; }
 
   .footer__wrapper {
-    width: 45%; } }
+    width: 45%; }
+
+  .industry__title, .industry__slide .swiper-container .swiper-pagination span:nth-child(1) {
+    font-size: 38px;
+    margin-bottom: 50px; }
+
+  .industry__slide .swiper-container .swiper-pagination span {
+    font-size: 24px; } }
 @media (max-width: 1024px) {
   .industry .swiper-pagination {
     padding: 0 40px !important; }
@@ -507,7 +521,22 @@ iframe {
 @media (max-width: 768px) {
   .industry {
     height: auto !important;
-    padding: 10px 0 50px 0; } }
+    padding: 10px 0 50px 0; }
+
+  .industry__title, .industry__slide .swiper-container .swiper-pagination span:nth-child(1) {
+    font-size: 27px; }
+
+  .industry__slide .swiper-container .swiper-pagination span {
+    font-size: 18px; }
+
+  .footer__contact, .footer__title {
+    font-size: 16px; }
+
+  .footer__contact, .footer__title {
+    margin: 30px 0; }
+
+  .footer__title {
+    margin-top: 50px; } }
 @media (max-width: 675px) {
   .industry {
     padding-top: 0px; }
@@ -527,7 +556,8 @@ iframe {
 
   .industry .swiper-pagination {
     padding: 0px 10px !important;
-    position: relative; }
+    position: relative;
+    margin-bottom: 25px; }
 
   .industry__slide .swiper-container {
     overflow: hidden; }
@@ -647,7 +677,7 @@ header .header {
     transform: translate(-50%, 0);
     top: 10px; }
   .header .slide-img {
-    height: 40.5vh !important; }
+    height: auto !important; }
 
   .about-us__title {
     padding-top: 40px; }

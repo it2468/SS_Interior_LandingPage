@@ -109,7 +109,6 @@
 @media (max-width: 1440px) {
     .font-size-64, .industry__title, .industry__slide .swiper-container .swiper-pagination span:nth-child(1) {
         font-size: 51px;
-        display: none;
     }
     .industry__slide .swiper-container .swiper-pagination span {
         font-size: 31px;
@@ -121,7 +120,14 @@
     }
     .footer__wrapper {
         width: 45%;
-    }    
+    }  
+    .industry__title, .industry__slide .swiper-container .swiper-pagination span:nth-child(1) {
+        font-size: 38px;
+        margin-bottom: 50px;
+    }
+    .industry__slide .swiper-container .swiper-pagination span {
+        font-size: 24px;
+    }
 }
 @media (max-width: 1024px) {
     .industry {
@@ -143,6 +149,21 @@
     .industry {
         height: auto !important;
         padding: 10px 0 50px 0;
+    }
+    .industry__title, .industry__slide .swiper-container .swiper-pagination span:nth-child(1) {
+        font-size: 27px;
+    }
+    .industry__slide .swiper-container .swiper-pagination span {
+        font-size: 18px;
+    }
+    .footer__contact, .footer__title {
+        font-size: 16px;
+    }
+    .footer__contact, .footer__title {
+        margin: 30px 0;
+    }
+    .footer__title {
+        margin-top: 50px;
     }
 }
 @media (max-width: 675px) {
@@ -168,6 +189,7 @@
     .industry .swiper-pagination {
         padding: 0px 10px !important;
         position: relative;
+        margin-bottom: 25px;
     }
     .industry__slide .swiper-container {
         overflow: hidden;
