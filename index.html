@@ -272,6 +272,7 @@
       autoplay: {
         delay: 2000,
       },
+      loop: true,
       speed: 2500,
       pagination: {
         el: '.swiper-pagination',
@@ -290,14 +291,18 @@
         'Sản phẩm khác'
       ]
       var swiper2 = new Swiper('.swiper-container2', {
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (menuIndustry[index]) + '</span>';
+        autoplay: {
+          delay: 2000,
         },
-      },
-    });
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (menuIndustry[index]) + '</span>';
+          },
+        },
+      });
 	</script>
 </body>
 </html>

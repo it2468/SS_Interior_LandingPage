@@ -94,11 +94,11 @@ header{
 	.swiper-container {
 		overflow: initial;
 	}
-	.header .swiper-container-horizontal > .swiper-pagination-bullets {
-		display: none;
-	}
 	header .header__logo .logo-header {
 	    width: 190px;
+	}
+	header .header .slide-img .logo-banner {
+	    height: 75vh;
 	}
 	header {
 		// .slide-img{
@@ -143,8 +143,11 @@ header{
 @media screen and (max-width: 991px){
 	.header{
 		.slide-img{
-			height: 63.5vh !important;
+			height: 100%;
 		}
+	}
+	header .header .slide-img .logo-banner {
+	    height: 100%;
 	}
 	// .section-top{
 	// 	height: 545px !important;
@@ -198,9 +201,6 @@ header{
 }
 @media screen and (max-width: 575px){
 	.header{
-		.slide-img{
-			height: 28.5vh !important;
-		}
 		.logo-header{
 			width: 180px !important;
 		}
@@ -239,9 +239,6 @@ header{
 				width: 190px;
 			}
 		}
-		.slide-img{
-			height: 28.5vh  !important;
-		}
 	}
 	.about-us{
 		&__signature{
@@ -270,18 +267,6 @@ header{
 	// }
 	.about-us__title {
 	    padding-top: 10px;
-	}
-	.header{
-		.slide-img{
-			height: 24.5vh !important;
-		}
-	}
-}
-@media screen and (max-width: 320px){
-	.header{
-		.slide-img{
-			height: 20vh !important;
-		}
 	}
 }
 // anh
