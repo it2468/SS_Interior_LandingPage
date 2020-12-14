@@ -1,3 +1,4 @@
+@import 'variables.scss';
 *,
 *:before,
 *:after {
@@ -10,13 +11,14 @@
 }
 
 html {
+    scroll-behavior: smooth;
     overflow: visible;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 body {
-    font-family: 'Montserrat Regular';
+    font-family: $font_primary;
     line-height: 1.5;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -25,7 +27,9 @@ body {
         // font-size: $font_size_16;
     }
 }
-
+.font-secondary{
+    font-family: $font_secondary;
+}
 .container {
     width: 90%;
     margin: auto;
@@ -222,6 +226,9 @@ iframe {
 .font-w400{
     font-weight: 400;
 }
+.font-w500{
+    font-weight: 500;
+}
 .font-w700{
     font-weight: 700;
 }
@@ -317,6 +324,9 @@ iframe {
 
 .font-size-40 {
     font-size: 40px;
+    @media screen and (max-width: 768px){
+        font-size: 24px;
+    }
 }
 
 .font-size-41 {
@@ -353,4 +363,30 @@ iframe {
 
 .font-size-72 {
     font-size: 72px;
+    @media screen and (max-width:1199px){
+        font-size: 54px;
+    }
+    @media screen and (max-width:1024px){
+        font-size: 44px;
+    }
+    @media screen and (max-width:768px){
+        font-size: 40px;
+    }
+    @media screen and (max-width:425px){
+        font-size: 32px !important;
+    }
+}
+@media (max-width: 1280px) {
+    .font-size-64 {
+        font-size: 30px;
+    }
+    .font-size-36 {
+        font-size: 21px;
+    }
+    .font-size-24 {
+        font-size: 16px !important;
+    }
+    .font-size-18 {
+        font-size: 14px;
+    }
 }
