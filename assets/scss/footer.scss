@@ -12,7 +12,7 @@
     @extend .display-flex-center-wrap;
     @extend .justify-content-center;
     &__wrapper {
-        width: 43%;
+        width: 60%;
     }
     &__contact, &__title {
         margin: 100px 0;
@@ -109,6 +109,7 @@
 @media (max-width: 1440px) {
     .font-size-64, .industry__title, .industry__slide .swiper-container .swiper-pagination span:nth-child(1) {
         font-size: 51px;
+        display: none;
     }
     .industry__slide .swiper-container .swiper-pagination span {
         font-size: 31px;

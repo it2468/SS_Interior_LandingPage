@@ -258,22 +258,24 @@
   </script> -->
   <script src="assets/js/main.js"></script>
   <script type="text/javascript">
-    var mySwiper = new Swiper('.swiper-container-auto', {
-      autoplay: {
-        delay: 5000,
-      },
-    });
+    // var mySwiper = new Swiper('.swiper-container-auto', {
+    //   autoplay: {
+    //     delay: 5000,
+    //   },
+    // });
   </script>
-	<script>
+  <script>
     document.getElementById("swiper-wrapper").style.transitionDuration = "1s";
-	    var swiper = new Swiper('.swiper-container', {
-	      pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-	      },
-        // autoplay: {
-        //   delay: 3000,
-        // },
+	    var swipers = new Swiper('.swiper-container-auto', {
+      effect: 'fade',
+      // grabCursor: true,
+      autoplay: {
+        delay: 2000,
+      },
+      speed: 2500,
+      pagination: {
+        el: '.swiper-pagination',
+      }
       });
       //
       const menuIndustry = [
