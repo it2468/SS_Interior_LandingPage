@@ -437,6 +437,9 @@ iframe {
   opacity: 1;
   background: #C3996B; }
 
+@media screen and (max-width: 575px) {
+  .header .swiper-pagination-bullet {
+    width: 25px; } }
 .launch {
   width: 100%; }
   .launch__wrapper {
@@ -581,7 +584,7 @@ header .header {
       transform: rotate3d(0, 1, 0, 90deg);
       transition: transform 2000ms cubic-bezier(0.425, 0.005, 0, 1); }
   .about-us__signature {
-    margin-top: -50px; }
+    margin-top: -70px; }
   .about-us__content {
     text-align: justify;
     width: 620px;
@@ -606,11 +609,11 @@ header .header {
   .swiper-container {
     overflow: initial; }
 
-  .header .swiper-container-horizontal > .swiper-pagination-bullets {
-    display: none; }
-
   header .header__logo .logo-header {
     width: 190px; }
+
+  header .header .slide-img .logo-banner {
+    height: 75vh; }
 
   header .header__logo {
     position: absolute;
@@ -629,7 +632,9 @@ header .header {
     .about-us .cube {
       transform: rotate3d(0, 1, 0, 0deg); }
     .about-us__signature {
-      margin-top: -40px; }
+      margin-top: -30px; }
+      .about-us__signature img {
+        width: 350px; }
     .about-us__content {
       margin: 60px auto; }
 
@@ -637,7 +642,10 @@ header .header {
     letter-spacing: -5px; } }
 @media screen and (max-width: 991px) {
   .header .slide-img {
-    height: 63.5vh !important; } }
+    height: 100%; }
+
+  header .header .slide-img .logo-banner {
+    height: 100%; } }
 @media screen and (max-width: 768px) {
   header .header__logo {
     top: 10px; }
@@ -647,14 +655,12 @@ header .header {
     transform: translate(-50%, 0);
     top: 10px; }
   .header .slide-img {
-    height: 40.5vh !important; }
+    height: auto !important; }
 
   .about-us__title {
     padding-top: 40px; }
   .about-us__signature {
-    margin-top: -30px; }
-    .about-us__signature img {
-      height: 80px; }
+    margin-top: -20px; }
   .about-us__content {
     padding: 0 50px 40px 50px;
     width: 100%;
@@ -665,8 +671,6 @@ header .header {
   .logo-header {
     width: 140px !important; } }
 @media screen and (max-width: 575px) {
-  .header .slide-img {
-    height: 28.5vh !important; }
   .header .logo-header {
     width: 180px !important; }
 
@@ -683,20 +687,21 @@ header .header {
     .about-us__info .acreage {
       border-right: none; }
   .about-us .info {
-    text-align: left; } }
+    text-align: left; }
+
+  .all-day {
+    display: block; } }
 @media screen and (max-width: 425px) {
   .header__logo {
     position: absolute;
     top: 10px; }
     .header__logo img {
       width: 190px; }
-  .header .slide-img {
-    height: 28.5vh  !important; }
 
   .about-us__signature {
-    margin-top: -20px; }
+    margin-top: -15px; }
     .about-us__signature img {
-      height: 60px; }
+      width: 290px; }
   .about-us__content {
     padding: 0 25px 40px 25px; }
     .about-us__content .content {
@@ -706,13 +711,7 @@ header .header {
     letter-spacing: -3px; } }
 @media screen and (max-width: 375px) {
   .about-us__title {
-    padding-top: 10px; }
-
-  .header .slide-img {
-    height: 24.5vh !important; } }
-@media screen and (max-width: 320px) {
-  .header .slide-img {
-    height: 20vh !important; } }
+    padding-top: 10px; } }
 .launch__wrapper {
   background-image: url("../../images/bg-small.png"); }
 

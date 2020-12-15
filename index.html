@@ -8,7 +8,7 @@
   
 </head>
   <body onscroll="onSrollPage()">
-    <header class="section-class-name section-top">
+    <header class="panel section-top" data-section-name="header">
       <div class="header" id="section1">
         <!-- Swiper -->
           <div class="swiper-container swiper-container-auto">
@@ -16,7 +16,7 @@
               <div class="swiper-slide">
                 <div class="slide-img">
                   <figure>
-                    <img src="assets/images/banner-1.png" class="logo-banner"alt="">
+                    <img src="assets/images/anh-1a.jpg" class="logo-banner"alt="">
                   </figure>
                   <h1 class="header__logo">
                     <img src="assets/images/logo-header.png" class="logo-header" alt="logo-header">
@@ -25,10 +25,31 @@
               </div>
               <div class="swiper-slide">
                 <div class="slide-img">
-              <figure>
-                <img src="assets/images/banner-2.png" class="logo-banner" alt="">
-              </figure>
+                  <figure>
+                    <img src="assets/images/banner-2.png" class="logo-banner" alt="">
+                  </figure>
+                </div>
               </div>
+              <div class="swiper-slide">
+                <div class="slide-img">
+                  <figure>
+                    <img src="assets/images/anh-1b.jpg" class="logo-banner" alt="">
+                  </figure>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-img">
+                  <figure>
+                    <img src="assets/images/anh-1c.jpg" class="logo-banner" alt="">
+                  </figure>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-img">
+                  <figure>
+                    <img src="assets/images/anh-1d.jpg" class="logo-banner" alt="">
+                  </figure>
+                </div>
               </div>
             </div>
             <!-- Add Pagination -->
@@ -36,7 +57,7 @@
           </div>
       </div>
     </header>
-    <section class="section-class-name about-us" id="section2">
+    <section class="panel about-us" id="section2" data-section-name="about-us">
     <div class="about-us__title text-center">
       <h2 class="text-uppercase font-size-72 font-secondary font-w400 secondary-color">
         <div class="effect-title">
@@ -127,7 +148,7 @@
   <!--Dev Anh-->
 
     <!--Industry-->
-    <section class="section-class-name industry">
+    <section class="panel industry" data-section-name="industry">
       <div class="industry__slide">
         <div class="swiper-container swiper-container2">
           <div id="swiper-wrapper" class="swiper-wrapper">
@@ -148,49 +169,49 @@
             <div class="swiper-slide">
               <div class="slide-img">
                 <figure>
-                  <img src="assets/images/image 7.png" alt="">
+                  <img src="assets/images/image-7.png" alt="">
                 </figure>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="slide-img">
                 <figure>
-                  <img src="assets/images/Anniversary5_RÉIZE 1.png" alt="">
+                  <img src="assets/images/anh-8.png" alt="">
                 </figure>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="slide-img">
                 <figure>
-                  <img src="assets/images/Ảnh ngoại thất 2.png" alt="">
+                  <img src="assets/images/ngoai-that.png" alt="">
                 </figure>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="slide-img">
                 <figure>
-                  <img src="assets/images/GC_CHARISMA_Dining-room_1 1.png" alt="">
+                  <img src="assets/images/anh-9.png" alt="">
                 </figure>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="slide-img">
                 <figure>
-                  <img src="assets/images/Halma-pendant-gold-Castro-Lighting-zola-bar-chair 1.png" alt="">
+                  <img src="assets/images/anh-10.png" alt="">
                 </figure>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="slide-img">
                 <figure>
-                  <img src="assets/images/a815fa501fbbeee5b7aa 1.png" alt="">
+                  <img src="assets/images/anh-11.png" alt="">
                 </figure>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="slide-img">
                 <figure>
-                  <img src="assets/images/585060768c9d7dc3248c 1.png" alt="">
+                  <img src="assets/images/anh-12.png" alt="">
                 </figure>
               </div>
             </div>
@@ -203,7 +224,7 @@
     <!--End Industry-->
 
     <!--Launch-->
-    <section class="section-class-name launch">
+    <section class="panel launch" data-section-name="launch">
       <div class="container launch__wrapper">
         <figure><img src="./assets/images/banner-3.png" alt="#"></figure>
       </div>
@@ -211,7 +232,7 @@
     <!--End Launch-->
 
 	  <!--Footer-->
-	  <footer class="section-class-name footer text-center font-size-18 secondary-color">
+	  <footer class="panel footer text-center font-size-18 secondary-color" data-section-name="footer">
       <div class="footer__wrapper">
         <h3 class="footer__title font-size-36 primary-color">
           S/S INTERIOR CHUẨN BỊ RA MẮT WEBSITE
@@ -224,12 +245,13 @@
             S/S INTERIOR
             </p>
             <p class="time-open">
-              Giờ mở cửa: 8:00 - 19:00
+              Giờ mở cửa: 8:00 - 19:00 
+              <span class="all-day">Tất cả các ngày trong tuần</span>
             </p>
             <p class="address">
               Tòa nhà Hoàng Cầu Skyline, 36 Hoàng Cầu, phường Ô Chợ Dừa, quận Đống Đa, Hà Nội
             </p>
-            <p class="phone">
+            <p class="phone secondary-color">
                 Tel:  024 7305 3636
             </p>
             <p class="email">
@@ -246,35 +268,31 @@
 	<!--End Dev Anh-->
 	
   <script src="assets/js/jquery-2.2.1.min.js"></script>
-  <!-- <script src="assets/js/jquery.scrollify.js"></script> -->
+  <script src="assets/js/jquery.scrollify.js"></script>
   <script src="assets/js/swiper-bundle.min.js"></script>
   <!-- <script>
     $(function() {
       $.scrollify({
-        section : ".section-class-name",
+        section : ".panel",
         sectionName : "section-name"
       });
     });
   </script> -->
   <script src="assets/js/main.js"></script>
-  <script type="text/javascript">
-    var mySwiper = new Swiper('.swiper-container-auto', {
-      autoplay: {
-        delay: 5000,
-      },
-    });
-  </script>
+
 	<script>
     document.getElementById("swiper-wrapper").style.transitionDuration = "1s";
-	    var swiper = new Swiper('.swiper-container', {
-	      pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-	      },
-        // autoplay: {
-        //   delay: 3000,
-        // },
-      });
+	    var swipers = new Swiper('.swiper-container-auto', {
+      effect: 'fade',
+      // grabCursor: true,
+      autoplay: {
+        delay: 2000,
+      },
+      speed: 2500,
+      pagination: {
+        el: '.swiper-pagination',
+      }
+    });
       //
       const menuIndustry = [
         '8 Ngành hàng',
