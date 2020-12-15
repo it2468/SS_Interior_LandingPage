@@ -12,7 +12,7 @@
     @extend .display-flex-center-wrap;
     @extend .justify-content-center;
     &__wrapper {
-        width: 43%;
+        width: 60%;
     }
     &__contact, &__title {
         margin: 100px 0;
@@ -24,7 +24,8 @@
 }
 .industry__slide .swiper-container .swiper-pagination span { padding: 5px 0 }
 .industry {
-    padding: 100px 0 160px 0;
+    padding-top: 20px;
+    padding-bottom: 80px;
     @media screen and (max-width: 1024px){
         padding: 50px 0 80px 0;
     }
@@ -99,10 +100,21 @@
                     @extend .font-size-64;
                     @extend .font-sc__boldregular;
                     @extend .font-w400;
-                    margin-bottom: 100px;
                 }
             }
         }
+        .slide-img {
+            width: 60%;
+            flex: 0 0 60%;
+        }
+    }
+}
+@media (max-width: 1440px) {
+    .font-size-64, .industry__title, .industry__slide .swiper-container .swiper-pagination span:nth-child(1) {
+        font-size: 51px;
+    }
+    .industry__slide .swiper-container .swiper-pagination span {
+        font-size: 31px;
     }
 }
 @media (max-width: 1280px) {
@@ -111,7 +123,13 @@
     }
     .footer__wrapper {
         width: 45%;
-    }    
+    }  
+    .industry__title, .industry__slide .swiper-container .swiper-pagination span:nth-child(1) {
+        font-size: 38px;
+    }
+    .industry__slide .swiper-container .swiper-pagination span {
+        font-size: 24px;
+    }
 }
 @media (max-width: 1024px) {
     .industry {
@@ -122,9 +140,6 @@
             height: auto !important;
         }
     }
-    .industry__slide .swiper-container .swiper-pagination span:nth-child(1) {
-        margin-bottom: 50px !important;
-    }
     .footer__contact, .footer__title {
         margin: 50px 0
     }
@@ -133,6 +148,25 @@
     .industry {
         height: auto !important;
         padding: 10px 0 50px 0;
+    }
+    .industry__title, .industry__slide .swiper-container .swiper-pagination span:nth-child(1) {
+        font-size: 27px;
+    }
+    .industry__slide .swiper-container .swiper-pagination span {
+        font-size: 18px;
+        padding: 0;
+    }
+    .footer__subtitle, .footer__title {
+        font-size: 16px;
+    }
+    .footer__contact {
+        font-size: 14px;
+    }
+    .footer__contact, .footer__title {
+        margin: 30px 0;
+    }
+    .footer__title {
+        margin-top: 50px;
     }
 }
 @media (max-width: 675px) {
@@ -152,12 +186,12 @@
     }
     .industry__title, .industry__slide .swiper-container .swiper-pagination span:nth-child(1) {
         font-size: 31px !important;
-        margin-bottom: 0 !important;
         margin-top: 10px;
     }
     .industry .swiper-pagination {
         padding: 0px 10px !important;
         position: relative;
+        margin-bottom: 25px;
     }
     .industry__slide .swiper-container {
         overflow: hidden;
@@ -168,5 +202,9 @@
     }
     .footer__contact, .footer__title {
         margin: 30px 0;
+    }
+    .industry__slide .slide-img {
+        width: 100%;
+        flex: 0 0 100%;
     }
 }

@@ -75,7 +75,7 @@ if touchScroll is false - update index
     eventListenerOptions = { passive: false },
     settings = {
       //section should be an identifier that is the same for each section
-      section: ".section",
+      section: ".section-class-name",
       sectionName: "section-name",
       interstitialSection: "",
       easing: "easeOutExpo",
@@ -84,7 +84,7 @@ if touchScroll is false - update index
       scrollbars: true,
       target:"html,body",
       standardScrollElements: false,
-      setHeights: true,
+      // setHeights: true,
       overflowScroll:true,
       updateHash: true,
       touchScroll:true,
