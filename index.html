@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="assets/scss/swiper-bundle.min.css">
 </head>
   <body onscroll="onSrollPage()">
-    <header class="panel section-top" data-section-name="header">
+    <header class="panel section-top">
       <div class="header" id="section1">
         <!-- Swiper -->
           <div class="swiper-container swiper-container-auto">
@@ -53,7 +53,7 @@
           </div>
       </div>
     </header>
-    <section class="panel about-us" id="section2" data-section-name="about-us">
+    <section class="panel about-us" id="section2">
     <div class="about-us__title text-center">
       <h2 class="text-uppercase font-size-72 font-secondary font-w400 secondary-color">
         <div class="effect-title">
@@ -144,7 +144,7 @@
   <!--Dev Anh-->
 
     <!--Industry-->
-    <section class="panel industry" data-section-name="industry">
+    <section class="panel industry">
       <div class="industry__slide">
         <div class="swiper-container swiper-container2">
           <div id="swiper-wrapper" class="swiper-wrapper">
@@ -220,7 +220,7 @@
     <!--End Industry-->
 
     <!--Launch-->
-    <section class="panel launch" data-section-name="launch">
+    <section class="panel launch">
       <div class="container launch__wrapper">
         <figure><img src="./assets/images/banner-3.png" alt="#"></figure>
       </div>
@@ -228,7 +228,7 @@
     <!--End Launch-->
 
 	  <!--Footer-->
-	  <footer class="panel footer text-center font-size-18 secondary-color" data-section-name="footer">
+	  <footer class="panel footer text-center font-size-18 secondary-color">
       <div class="footer__wrapper">
         <h3 class="footer__title font-size-36 primary-color">
           S/S INTERIOR CHUẨN BỊ RA MẮT WEBSITE
@@ -302,14 +302,17 @@
         'Sản phẩm khác'
       ]
       var swiper2 = new Swiper('.swiper-container2', {
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (menuIndustry[index]) + '</span>';
-        },
+        autoplay: {
+        delay: 2000,
       },
-    });
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (menuIndustry[index]) + '</span>';
+          },
+        },
+      });
 	</script>
 </body>
 </html>
