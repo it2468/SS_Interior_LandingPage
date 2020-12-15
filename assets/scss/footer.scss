@@ -74,6 +74,9 @@
                 @extend .text-left;
                 padding: 0 100px;
                 @extend .position-rel;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
                 span {
                     width: 100%;
                     list-style: none;
@@ -116,19 +119,25 @@
     .industry__slide .swiper-container .swiper-pagination span {
         font-size: 31px;
     }
+    .industry__slide .slide-img img {
+        height: 100%;
+    }
 }
 @media (max-width: 1280px) {
     .industry {
         overflow: hidden;
     }
     .footer__wrapper {
-        width: 45%;
+        width: 55%;
     }  
     .industry__title, .industry__slide .swiper-container .swiper-pagination span:nth-child(1) {
         font-size: 38px;
     }
     .industry__slide .swiper-container .swiper-pagination span {
         font-size: 24px;
+    }
+    .footer__title, .footer__subtitle {
+        font-size: 18px;
     }
 }
 @media (max-width: 1024px) {
