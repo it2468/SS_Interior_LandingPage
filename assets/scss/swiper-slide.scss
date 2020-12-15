@@ -57,3 +57,8 @@
     background: #C3996B;
     // background: var(--swiper-pagination-color,var(--swiper-theme-color));
 }
+@media screen and (max-width: 575px){
+  .header .swiper-pagination-bullet {
+      width: 25px;
+  }
+}

@@ -60,7 +60,7 @@ header{
 		}
 	}
 	&__signature{
-		margin-top: -50px;
+		margin-top: -70px;
 	}
 	&__content{
 		text-align: justify;
@@ -126,7 +126,10 @@ header{
 			transform: rotate3d(0, 1, 0, 0deg);
 		}
 		&__signature{
-			margin-top: -40px;
+			margin-top: -30px;
+			img{
+				width: 350px
+			}
 		}
 		&__content{
     		margin: 60px auto;
@@ -177,10 +180,7 @@ header{
 			padding-top: 40px;
 		}
 		&__signature{
-			margin-top: -30px;
-			img{
-				height: 80px;
-			}
+			margin-top: -20px;
 		}
 		&__content{
 			padding: 0 50px 40px 50px;
@@ -226,6 +226,9 @@ header{
 			text-align: left;
 		}
 	}
+	.all-day{
+		display: block;
+	}
 	// .section-top{
 	// 	height: 300px !important;
 	// }
@@ -242,9 +245,9 @@ header{
 	}
 	.about-us{
 		&__signature{
-			margin-top: -20px;
+			margin-top: -15px;
 			img{
-				height: 60px;
+				width: 290px;
 			}
 		}
 		&__content{
