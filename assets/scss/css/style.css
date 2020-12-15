@@ -690,7 +690,10 @@ header .header {
     .about-us__info .acreage {
       border-right: none; }
   .about-us .info {
-    text-align: left; } }
+    text-align: left; }
+
+  .all-day {
+    display: block; } }
 @media screen and (max-width: 425px) {
   .header__logo {
     position: absolute;

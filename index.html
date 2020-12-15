@@ -225,6 +225,7 @@
             </p>
             <p class="time-open">
               Giờ mở cửa: 8:00 - 19:00
+              <span class="all-day">Tất cả các ngày trong tuần</span>
             </p>
             <p class="address">
               Tòa nhà Hoàng Cầu Skyline, 36 Hoàng Cầu, phường Ô Chợ Dừa, quận Đống Đa, Hà Nội
@@ -288,14 +289,17 @@
         'Sản phẩm khác'
       ]
       var swiper2 = new Swiper('.swiper-container2', {
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (menuIndustry[index]) + '</span>';
+        autoplay: {
+          delay: 3000,
         },
-      },
-    });
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (menuIndustry[index]) + '</span>';
+          },
+        },
+      });
 	</script>
 </body>
 </html>
