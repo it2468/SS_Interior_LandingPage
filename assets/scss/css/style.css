@@ -455,7 +455,7 @@ iframe {
   padding: 5px 0; }
 
 .industry {
-  padding: 100px 0 160px 0; }
+  padding: 60px 0 80px 0; }
   @media screen and (max-width: 1024px) {
     .industry {
       padding: 50px 0 80px 0; } }
