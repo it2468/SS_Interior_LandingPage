@@ -14,23 +14,23 @@ function onSrollPage() {
 }
 
 
-$(function(){
-   $.scrollify({
-    section : ".panel",
-    //sectionName : "section-name",
-    interstitialSection : "",
-    easing: "easeOutExpo",
-    scrollSpeed: 100,
-    offset : 0,
-    scrollbars: true,
-    standardScrollElements: "",
-     // setHeights: true,
-    overflowScroll: true,
-    updateHash: true,
-    touchScroll:true,
-    before:function() {},
-    after:function() {},
-    afterResize:function() {},
-    afterRender:function() {}
-  });
-})
+// $(function(){
+//    $.scrollify({
+//     section : ".panel",
+//     //sectionName : "section-name",
+//     interstitialSection : "",
+//     easing: "easeOutExpo",
+//     scrollSpeed: 100,
+//     offset : 0,
+//     scrollbars: true,
+//     standardScrollElements: "",
+//      // setHeights: true,
+//     overflowScroll: true,
+//     updateHash: true,
+//     touchScroll:true,
+//     before:function() {},
+//     after:function() {},
+//     afterResize:function() {},
+//     afterRender:function() {}
+//   });
+// })
