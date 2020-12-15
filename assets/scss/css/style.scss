@@ -195,9 +195,9 @@ header{
 		width: 140px !important;
 	}
 	
-	// .section-top{
-	// 	height: 420px !important;
-	// }
+	.header .swiper-pagination-bullet {
+		width: 20px;
+	}
 }
 @media screen and (max-width: 575px){
 	.header{
@@ -229,9 +229,6 @@ header{
 	.all-day{
 		display: block;
 	}
-	// .section-top{
-	// 	height: 300px !important;
-	// }
 }
 @media screen and (max-width: 425px){
 	.header{
