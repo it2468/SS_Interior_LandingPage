@@ -412,6 +412,12 @@ iframe {
   bottom: 8px;
   left: 0;
   width: 100%; }
+  @media screen and (max-width: 768px) {
+    .header .swiper-container-horizontal > .swiper-pagination-bullets {
+      bottom: 20px; } }
+  @media screen and (max-width: 427px) {
+    .header .swiper-container-horizontal > .swiper-pagination-bullets {
+      bottom: 10px; } }
 
 .header .swiper-pagination-bullet {
   border: none;
