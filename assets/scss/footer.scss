@@ -15,7 +15,7 @@
         width: 43%;
     }
     &__contact, &__title {
-        margin: 100px 0;
+        margin: 50px 0;
     }
     &__title, &__subtitle {
         @extend .font-sc__boldregular;
@@ -25,7 +25,7 @@
 .industry__slide .swiper-container .swiper-pagination span { padding: 5px 0 }
 .industry {
     // padding: 100px 0 160px 0;
-    padding: 60px 0 80px 0;
+    padding: 50px 0;
     @media screen and (max-width: 1024px){
         padding: 50px 0 80px 0;
     }
@@ -182,25 +182,8 @@
     .industry {
         padding-top: 0px;
     }
-    // .launch {
-    //     max-height: 100px;
-    // }
     .industry__slide .swiper-container .swiper-pagination span {
         font-size: 16px;
-    }
-    .industry__slide .swiper-container .swiper-pagination,
-    .industry__slide .swiper-container .swiper-wrapper {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    .industry__title, .industry__slide .swiper-container .swiper-pagination span:nth-child(1) {
-        font-size: 31px !important;
-        margin-top: 10px;
-    }
-    .industry .swiper-pagination {
-        padding: 0px 10px !important;
-        position: relative;
-        margin-bottom: 25px;
     }
     .industry__slide .swiper-container {
         overflow: hidden;
@@ -215,5 +198,24 @@
     .industry__slide .slide-img {
         width: 100%;
         flex: 0 0 100%;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 674px) {
+    
+}
+@media (max-width: 425px) {
+    .industry__slide .swiper-container .swiper-pagination,
+    .industry__slide .swiper-container .swiper-wrapper {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .industry .swiper-pagination {
+        padding: 0px 10px !important;
+        position: relative;
+        margin-bottom: 25px;
+    }
+    .industry__title, .industry__slide .swiper-container .swiper-pagination span:nth-child(1) {
+        font-size: 31px !important;
+        margin-top: 10px;
     }
 }
