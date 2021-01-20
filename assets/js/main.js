@@ -1,8 +1,8 @@
 function onSrollPage() {
     let element = document.getElementsByClassName('cube')
-    console.log("pageYOffset: " + window.pageYOffset);
+    // console.log("pageYOffset: " + window.pageYOffset);
     if(window.pageYOffset > 300){
-        console.log('gaga');
+        // console.log('gaga');
         for(let i = 0; i < element.length; i++) {
             element[i].classList.add('flip-title');
         }
@@ -12,16 +12,19 @@ function onSrollPage() {
         }
     }
 }
-// $.scrollify({
-//     section : ".section-class-name",
-//     sectionName : "section-name",
+
+
+// $(function(){
+//    $.scrollify({
+//     section : ".panel",
+//     //sectionName : "section-name",
 //     interstitialSection : "",
 //     easing: "easeOutExpo",
-//     scrollSpeed: 1100,
+//     scrollSpeed: 100,
 //     offset : 0,
 //     scrollbars: true,
 //     standardScrollElements: "",
-//     // setHeights: true,
+//      // setHeights: true,
 //     overflowScroll: true,
 //     updateHash: true,
 //     touchScroll:true,
@@ -30,3 +33,4 @@ function onSrollPage() {
 //     afterResize:function() {},
 //     afterRender:function() {}
 //   });
+// })

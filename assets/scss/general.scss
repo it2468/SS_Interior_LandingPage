@@ -44,8 +44,14 @@ body {
 .color-blue{
     color: #222D47;
 }
+.color-gray{
+    color: $secondary_gray;
+}
 .bg-blue{
     background: #222D47;
+}
+.bg-light{
+    background: #FFFFFF;
 }
 
 a, a:hover, a:active, a:visited, a:focus {text-decoration: none; transition: .3s; }
@@ -389,4 +395,8 @@ iframe {
     .font-size-18 {
         font-size: 14px;
     }
+    .panel {
+        height: auto !important;
+    }
 }
+

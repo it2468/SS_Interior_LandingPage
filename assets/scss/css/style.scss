@@ -60,7 +60,7 @@ header{
 		}
 	}
 	&__signature{
-		margin-top: -50px;
+		margin-top: -70px;
 	}
 	&__content{
 		text-align: justify;
@@ -94,11 +94,11 @@ header{
 	.swiper-container {
 		overflow: initial;
 	}
-	.header .swiper-container-horizontal > .swiper-pagination-bullets {
-		display: none;
-	}
 	header .header__logo .logo-header {
 	    width: 190px;
+	}
+	header .header .slide-img .logo-banner {
+	    height: 75vh;
 	}
 	header {
 		// .slide-img{
@@ -126,7 +126,10 @@ header{
 			transform: rotate3d(0, 1, 0, 0deg);
 		}
 		&__signature{
-			margin-top: -40px;
+			margin-top: -30px;
+			img{
+				width: 350px
+			}
 		}
 		&__content{
     		margin: 60px auto;
@@ -143,8 +146,11 @@ header{
 @media screen and (max-width: 991px){
 	.header{
 		.slide-img{
-			height: 63.5vh !important;
+			height: 100%;
 		}
+	}
+	header .header .slide-img .logo-banner {
+	    height: 100%;
 	}
 	// .section-top{
 	// 	height: 545px !important;
@@ -166,7 +172,7 @@ header{
 			// }
 		}
 		.slide-img{
-			height: 40.5vh !important;
+			height: auto !important;
 		}
 	}
 	.about-us{
@@ -174,10 +180,7 @@ header{
 			padding-top: 40px;
 		}
 		&__signature{
-			margin-top: -30px;
-			img{
-				height: 80px;
-			}
+			margin-top: -20px;
 		}
 		&__content{
 			padding: 0 50px 40px 50px;
@@ -192,15 +195,12 @@ header{
 		width: 140px !important;
 	}
 	
-	// .section-top{
-	// 	height: 420px !important;
-	// }
+	.header .swiper-pagination-bullet {
+		width: 20px;
+	}
 }
 @media screen and (max-width: 575px){
 	.header{
-		.slide-img{
-			height: 28.5vh !important;
-		}
 		.logo-header{
 			width: 180px !important;
 		}
@@ -226,12 +226,12 @@ header{
 			text-align: left;
 		}
 	}
-	// .section-top{
-	// 	height: 300px !important;
-	// }
 	.all-day{
 		display: block;
 	}
+	// .section-top{
+	// 	height: 300px !important;
+	// }
 }
 @media screen and (max-width: 425px){
 	.header{
@@ -242,15 +242,12 @@ header{
 				width: 190px;
 			}
 		}
-		.slide-img{
-			height: 28.5vh  !important;
-		}
 	}
 	.about-us{
 		&__signature{
-			margin-top: -20px;
+			margin-top: -15px;
 			img{
-				height: 60px;
+				width: 290px;
 			}
 		}
 		&__content{
@@ -273,18 +270,6 @@ header{
 	// }
 	.about-us__title {
 	    padding-top: 10px;
-	}
-	.header{
-		.slide-img{
-			height: 24.5vh !important;
-		}
-	}
-}
-@media screen and (max-width: 320px){
-	.header{
-		.slide-img{
-			height: 20vh !important;
-		}
 	}
 }
 // anh

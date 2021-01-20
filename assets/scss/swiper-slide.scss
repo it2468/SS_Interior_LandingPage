@@ -26,6 +26,12 @@
     bottom: 8px;
     left: 0;
     width: 100%;
+    @media screen and (max-width: 768px){
+      bottom: 20px;
+    }
+    @media screen and (max-width: 427px){
+      bottom: 10px;
+    }
 }
 .header .swiper-pagination-bullet {
     border: none;
@@ -56,4 +62,9 @@
     opacity: 1;
     background: #C3996B;
     // background: var(--swiper-pagination-color,var(--swiper-theme-color));
+}
+@media screen and (max-width: 575px){
+  .header .swiper-pagination-bullet {
+      width: 25px;
+  }
 }
