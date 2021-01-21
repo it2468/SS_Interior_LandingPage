@@ -457,15 +457,21 @@ iframe {
     width: 25px; } }
 .launch {
   width: 100%; }
-  .launch__wrapper {
-    padding-top: 25px;
-    background-image: url("../images/bg-small.png"); }
+
+.slogan__wrapper {
+  width: 44%;
+  margin: 0 auto;
+  padding: 50px 0 100px 0; }
 
 .footer__contact, .footer__title {
   margin: 50px 0; }
-.footer__top, .footer__bottom {
+.footer__top {
   padding: 50px 0;
   border-bottom: 1px solid #B98857; }
+.footer__bottom {
+  padding-top: 50px; }
+  .footer__bottom .social .wrap-facebook {
+    margin-top: 20px; }
 .footer__form {
   width: 43%;
   margin: 0 auto; }
@@ -476,13 +482,13 @@ iframe {
     padding-bottom: 10px; }
   .footer__form__input {
     padding-right: 30px;
-    flex: 0 0 80%; }
+    flex: 0 0 70%; }
   .footer__form__sub {
-    flex: 0 0 20%; }
+    flex: 0 0 30%; }
     .footer__form__sub button {
       background: none;
       border: none;
-      padding-left: 20px; }
+      padding-left: 25px; }
       .footer__form__sub button::before {
         position: absolute;
         content: '';
@@ -573,7 +579,10 @@ iframe {
     flex: 0 0 100%; }
 
   .footer__form__sub {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+
+  .footer__form__input {
+    padding-right: 0; } }
 @media (max-width: 1330px) {
   .font-size-64, .industry__title, .industry__slide .swiper-container .swiper-pagination p:nth-child(1), .industry__title, .industry__slide .swiper-container .swiper-pagination p:nth-child(1) {
     font-size: 38px; }
@@ -606,7 +615,12 @@ iframe {
     height: auto !important; }
 
   .footer__contact, .footer__title {
-    margin: 50px 0; } }
+    margin: 50px 0; }
+
+  .footer__bottom .content {
+    flex: 0 0 100%; }
+  .footer__bottom .social {
+    margin-top: 30px; } }
 @media screen and (max-width: 891px) {
   .industry__slide .swiper-container .swiper-pagination p:nth-child(1) {
     font-size: 32px; } }
@@ -857,7 +871,5 @@ header .header {
 @media screen and (max-width: 375px) {
   .about-us__title {
     padding-top: 10px; } }
-.launch__wrapper {
-  background-image: url("../../images/bg-small.png"); }
 
 /*# sourceMappingURL=style.css.map */

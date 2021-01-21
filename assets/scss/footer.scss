@@ -4,9 +4,14 @@
     &__wrapper {
         @extend .display-flex-center-wrap;
         @extend .justify-content-center;
-        padding-top: 25px;
-        background-image: url('../images/bg-small.png');
+        // padding-top: 25px;
+        // background-image: url('../images/bg-small.png');
     }
+}
+.slogan__wrapper {
+    width: 44%;
+    margin: 0 auto;
+    padding: 50px 0 100px 0;
 }
 .footer {
     @extend .display-flex-center-wrap;
@@ -18,9 +23,17 @@
         @extend .font-sc__boldregular;
         @extend .font-w400;
     }
-    &__top, &__bottom {
+    &__top {
         padding: 50px 0;
         border-bottom: 1px solid $primary_color;
+    }
+    &__bottom {
+        padding-top: 50px;
+        .social {
+            .wrap-facebook {
+                margin-top: 20px;
+            }
+        }
     }
     &__form {
         width: 43%;
@@ -33,14 +46,14 @@
         }
         &__input {
             padding-right: 30px;
-            flex: 0 0 80%;
+            flex: 0 0 70%;
         }
         &__sub {
-            flex: 0 0 20%;
+            flex: 0 0 30%;
             button {
                 background: none;
                 border: none;
-                padding-left: 20px;
+                padding-left: 25px;
                 &::before {
                     position: absolute;
                     content: '';
@@ -197,6 +210,9 @@
     .footer__form__sub {
         margin-top: 20px;
     }
+    .footer__form__input {
+        padding-right: 0;
+    }
 }
 @media (max-width: 1330px) {
     .font-size-64, .industry__title, .industry__slide .swiper-container .swiper-pagination p:nth-child(1) {
@@ -243,6 +259,14 @@
     }
     .footer__contact, .footer__title {
         margin: 50px 0
+    }
+    .footer__bottom {
+        .content {
+            flex: 0 0 100%;
+        }
+        .social {
+            margin-top: 30px;
+        }
     }
 }
 @media screen and (max-width: 891px){

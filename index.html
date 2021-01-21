@@ -16,21 +16,25 @@
   <link rel="dns-prefetch">
   <link rel="stylesheet" href="assets/scss/css/style.css">
   <link rel="stylesheet" href="assets/scss/swiper-bundle.min.css">
-  <!-- <script defer src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
-  <script defer src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" type="text/javascript"></script> -->
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
 </head>
   <body onscroll="onSrollPage()">
     <header class="panel section-top">
       <div class="header" id="section1">
-        <!-- Swiper -->
         <div class="swiper-container swiper-container-auto">
           <div class="swiper-wrapper">
              <div class="swiper-slide">
               <div class="slide-img">
                 <figure>
-                  <img src="assets/images/banner-1.png" class="logo-banner"alt="">
+                  <img src="assets/images/slide1.png" class="logo-banner"alt="">
+                </figure>
+              </div> 
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img">
+                <figure>
+                  <img src="assets/images/banner-1.png" class="logo-banner" alt="">
                 </figure>
               </div> 
             </div>
@@ -38,13 +42,6 @@
               <div class="slide-img">
                 <figure>
                   <img src="assets/images/anh-1a_33.jpg" class="logo-banner"alt="">
-                </figure>
-              </div> 
-            </div>
-            <div class="swiper-slide">
-              <div class="slide-img">
-                <figure>
-                  <img src="assets/images/banner-2.png" class="logo-banner" alt="">
                 </figure>
               </div>
             </div>
@@ -70,7 +67,6 @@
               </div>
             </div>
           </div>
-          <!-- Add Pagination -->
           <div class="swiper-pagination"></div>
         </div>
       </div>
@@ -162,10 +158,6 @@
       </div>
     </div>  
     </section>
-	
-  <!--Dev Anh-->
-
-    <!--Industry-->
     <section class="panel industry">
       <div class="industry__slide">
         <div class="swiper-container swiper-container2">
@@ -234,22 +226,27 @@
               </div>
             </div>
           </div>
-          <!-- Add Pagination -->
           <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
-    <!--End Industry-->
-
-    <!--Launch-->
     <section class="panel launch">
       <div class="container launch__wrapper">
-        <figure><img src="./assets/images/banner-3.png" alt="#"></figure>
+        <figure>
+          <img src="assets/images/anh-1a_33.jpg" class="logo-banner"alt="#">
+        </figure>
       </div>
     </section>
-    <!--End Launch-->
-
-	  <!--Footer-->
+    <section class="container text-center">
+      <div class="slogan__wrapper">
+        <h3 class="footer__title font-size-36 primary-color">
+          S/S INTERIOR CHUẨN BỊ RA MẮT WEBSITE
+        </h3>
+        <h3 class="footer__subtitle font-size-36 primary-color">
+          CHÚNG TÔI RẤT MONG ĐƯỢC ĐÓN TIẾP QUÝ KHÁCH TẠI SHOWROOM ĐỂ TRỰC TIẾP TRẢI NGHIỆM SẢN PHẨM
+        </h3>
+      </div>
+    </section>
 	  <footer class="panel footer font-size-18 bg-light">
       <div class="footer__wrapper container">
         <div class="footer__top">
@@ -267,7 +264,7 @@
               <div class="footer__form__input">
                 <input id="contents" name="contents" type="text" class="bg-input full-width" placeholder="BẠN CẦN TƯ VẤN?">
               </div>
-              <div class="footer__form__sub display-flex-wrap align-items-end">
+              <div class="footer__form__sub display-flex-wrap align-items-end content-end">
                 <button type="submit" class="btn btn-form font-primary font-size-14 text-uppercase make-appointment cursor-pointer position-rel primary-color">
                   Đặt lịch tư vấn
                 </button>
@@ -288,6 +285,11 @@
           </div>
           <div class="social">
             <p class="primary-color">THEO DÕI S/S INTERIOR</p>
+            <a href="https://www.facebook.com/ssinterior.vn" target="blank">
+              <figure class="text-center wrap-facebook">
+                <img src="./assets/images/fb.png" alt="facebook">
+              </figure>
+            </a>
           </div>
         </div>
         <div class="footer__copy-right">
@@ -297,32 +299,16 @@
         </div>
       </div>
 	  </footer>
-    <!--End Footer-->
-    
-	<!--End Dev Anh-->
-	
-  <!-- <script src="assets/js/jquery-2.2.1.min.js"></script> -->
   <script src="assets/js/jquery.scrollify.js"></script>
   <script src="assets/js/swiper-bundle.min.js"></script>
-  <!-- <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script> -->
-  <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
-  <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous"></script>
-  <!-- <script>
-    $(function() {
-      $.scrollify({
-        section : ".panel",
-        sectionName : "section-name"
-      });
-    });
-  </script> -->
   <script src="assets/js/main.js"></script>
 
 	<script>
     document.getElementById("swiper-wrapper").style.transitionDuration = "1s";
 	    var swipers = new Swiper('.swiper-container-auto', {
-      // effect: 'fade',
-      // grabCursor: true,
       autoplay: {
         delay: 2000,
       },
@@ -334,7 +320,6 @@
       paginationClickable: true,
       autoplayDisableOnInteraction: false
     });
-      //
       const menuIndustry = [
         '8 Ngành hàng',
         'Gạch ốp lát',
@@ -362,7 +347,6 @@
         $( this ).trigger( "click" );
       });
   </script>
-  <!--Script for Form Submit-->
   <script src="assets/js/formSubmit.js"></script>
 </body>
 </html>
